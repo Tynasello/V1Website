@@ -1,0 +1,179 @@
+@media (max-width: 1024px) {
+  .container {
+    max-width: 700px;
+    color: #333;
+    z-index: 20; }
+  #header-home #main-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #header-home #main-nav img {
+      margin-top: 1rem; }
+  #header-home .header-content {
+    display: flex;
+    flex-direction: column; }
+    #header-home .header-content #header-left {
+      display: flex;
+      flex-direction: row;
+      border-right: none;
+      align-items: center;
+      justify-content: center; }
+      #header-home .header-content #header-left h1 {
+        text-align: center;
+        align-self: center; }
+      #header-home .header-content #header-left img {
+        width: 100px;
+        height: 100px;
+        margin: 1rem 0; }
+    #header-home .header-content #header-right h1 {
+      text-align: center; }
+  #work-exp {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1rem; }
+    #work-exp #work-heading h1 {
+      margin: 1rem; }
+    #work-exp #work-heading i {
+      margin: 0; }
+    #work-exp .work-1 h3 {
+      margin: 0; }
+    #work-exp .work-1 p {
+      margin: 1rem; }
+  #projects {
+    display: flex;
+    flex-direction: column; }
+    #projects-heading h1 {
+      margin: 1rem; }
+    #projects-heading img {
+      margin: 1rem auto; }
+    #projects .projects {
+      display: flex;
+      flex-direction: column; }
+  #achievements {
+    display: flex;
+    flex-direction: column-reverse; }
+    #achievements-heading h1 {
+      margin: 1rem; }
+  #project-header {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse; }
+    #project-header .proj-left img {
+      width: 300px;
+      height: 250px;
+      margin: 2rem; }
+    #project-header .proj-right i {
+      display: none; }
+    #project-header .proj-right h1 {
+      font-size: 2rem;
+      text-align: center; }
+    #project-header .proj-right h3 {
+      font-size: 1.2rem; }
+    #project-header .proj-right p {
+      font-size: .9rem; }
+    #project-header .proj-right a {
+      display: none; }
+  #proj-page-content {
+    display: flex;
+    flex-direction: column; }
+    #proj-page-content .content {
+      display: flex;
+      flex-direction: column; }
+      #proj-page-content .content img {
+        height: 200px;
+        width: 240px; }
+      #proj-page-content .content h3 {
+        font-size: 1.2rem;
+        text-align: center; }
+      #proj-page-content .content p {
+        font-size: .8rem; }
+  #footer #footer-content {
+    max-width: 90vw;
+    text-align: center; } }
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 375px;
+    max-height: none;
+    z-index: 20; }
+  #header-home #main-nav img {
+    width: 50px;
+    height: 50px; }
+  #header-home #main-nav li {
+    font-size: .8rem;
+    padding: .5rem; }
+  #header-home .header-content #header-left {
+    justify-content: space-between;
+    margin-bottom: 0; }
+    #header-home .header-content #header-left h1 {
+      font-size: 2rem; }
+    #header-home .header-content #header-left img {
+      height: 70px;
+      margin-left: 1.5rem; }
+  #header-home .header-content #header-right h1 {
+    font-size: 1.2rem;
+    padding-bottom: .4rem;
+    border-bottom: 1px #ccc solid; }
+  #header-home .header-content #header-right p {
+    font-size: .8rem; }
+  #work-exp #work-heading h1 {
+    font-size: 2rem; }
+  #work-exp #work-heading i {
+    font-size: 2rem; }
+  #work-exp .work-1 h2 {
+    font-size: 1.2rem; }
+  #work-exp .work-1 p {
+    text-align: left;
+    font-size: .8rem; }
+  #projects-heading h1 {
+    font-size: 2rem; }
+  #projects-heading p {
+    font-size: .8rem; }
+  #projects-heading img {
+    width: 6rem;
+    height: 6rem; }
+  #projects .projects {
+    margin: 0; }
+    #projects .projects .project h2 {
+      font-size: 1rem; }
+    #projects .projects .project p {
+      font-size: .8rem;
+      max-width: 80vw; }
+    #projects .projects .project .proj-btn, #projects .projects .project a {
+      padding: .2rem .3rem;
+      font-size: .8rem;
+      border-radius: 3px; }
+  #achievements-heading h1 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 1rem auto; }
+  #achievements-heading i {
+    font-size: 2rem;
+    margin: 0 1rem 1rem 1rem; }
+  #achievements-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0; }
+    #achievements-content h2 {
+      font-size: 1rem;
+      border-bottom: 1px #ccc solid; }
+    #achievements-content h3 {
+      font-size: 1rem; }
+    #achievements-content p {
+      font-size: .8rem; }
+  #footer {
+    align-items: center;
+    justify-self: center; }
+    #footer-content p {
+      font-size: .8rem;
+      margin: 0; }
+    #footer-content .contacts a {
+      margin: .3rem; }
+      #footer-content .contacts a:first-child {
+        margin-left: .3rem; }
+      #footer-content .contacts a i {
+        font-size: 1.3rem; }
+    #footer-content #logo {
+      width: 30px;
+      height: 30px;
+      margin-left: .5rem; } }

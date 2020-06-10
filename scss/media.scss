@@ -1,0 +1,301 @@
+@import "var";
+//Tablets and small
+@media(max-width: 1024px) {
+  .container{
+    max-width: 700px;
+    color: $dc;
+    z-index: 20;
+  }
+  #header-home {
+    #main-nav{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img{
+        margin-top: 1rem;
+      }
+    }
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      #header-left{
+        display: flex;
+        flex-direction: row;
+        border-right: none;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+          text-align: center;
+          align-self: center;
+        }
+        img{
+          width: 100px;
+          height: 100px;
+          margin: 1rem 0;
+        }
+      }
+      #header-right{
+        h1{
+          text-align: center;
+        }
+      }
+
+    }
+  }
+
+  #work-exp{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1rem;
+    #work-heading{
+      h1{
+        margin: 1rem;
+      }
+      i{
+        margin: 0;
+      }
+    }
+    .work-1{
+      h3{
+        margin: 0;
+      }
+      p{
+        margin: 1rem;
+      }
+    }
+  }
+  #projects{
+    display: flex;
+    flex-direction: column;
+    &-heading{
+      h1{
+        margin: 1rem;
+      }
+      img{
+        margin: 1rem auto;
+      }
+    }
+    .projects{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  #achievements{
+    display: flex;
+    flex-direction: column-reverse;
+    &-heading{
+      h1{
+        margin: 1rem;
+      }
+    }
+  }
+//Arduino Proj
+  #project-header{
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    .proj-left{
+      img{
+        width: 300px;
+        height: 250px;
+        margin: 2rem;
+      }
+    }
+    .proj-right{
+      i{
+        display: none;
+      }
+      h1{
+        font-size: 2rem;
+        text-align: center;
+      }
+      h3{
+        font-size: 1.2rem;
+      }
+      p{
+        font-size: .9rem;
+      }
+      a{
+        display:none;
+      }
+    }
+  }
+  #proj-page-content{
+    display: flex;
+    flex-direction: column;
+    .content{
+      display: flex;
+      flex-direction: column;
+      img{
+        height: 200px;
+        width: 240px;
+      }
+      h3{
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      p{
+        font-size: .8rem;
+      }
+    }
+  }
+  #footer{
+    #footer-content{
+      max-width: 90vw;
+      text-align: center;
+    }
+  }
+}
+
+//smartphones
+@media(max-width: 600px){
+  .container{
+    max-width: 375px;
+    max-height: none;
+    z-index: 20;
+
+  }
+  #header-home{
+    #main-nav{
+      img{
+        width: 50px;
+        height: 50px;
+      }
+      li{
+        font-size: .8rem;
+        padding: .5rem;
+      }
+    }
+    .header-content{
+      #header-left{
+        justify-content: space-between;
+        margin-bottom: 0;
+        h1{
+          font-size: 2rem;
+        }
+        img{
+          height: 70px;
+          margin-left: 1.5rem;
+        }
+      }
+      #header-right{
+        h1{
+          font-size: 1.2rem;
+          padding-bottom: .4rem;
+          border-bottom: 1px $medium-c solid;
+        }
+        p{
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+  #work-exp{
+    #work-heading{
+      h1{
+        font-size: 2rem;
+      }
+      i{
+        font-size: 2rem;
+      }
+    }
+    .work-1 {
+      h2 {
+        font-size: 1.2rem;
+      }
+      p{
+        text-align: left;
+        font-size: .8rem;
+      }
+    }
+  }
+ #projects{
+   &-heading{
+     h1{
+       font-size: 2rem;
+     }
+     p{
+       font-size: .8rem;
+     }
+     img{
+       width: 6rem;
+       height: 6rem;
+     }
+   }
+   .projects{
+     margin: 0;
+      .project{
+        h2{
+          font-size: 1rem;
+        }
+        p{
+          font-size: .8rem;
+          max-width: 80vw;
+        }
+        .proj-btn, a{
+          padding: .2rem .3rem;
+          font-size: .8rem;
+          border-radius: 3px;
+        }
+      }
+   }
+ }
+  #achievements{
+    &-heading{
+      h1{
+        font-size: 1.7rem;
+        text-align: center;
+        margin: 1rem auto;
+      }
+      i{
+        font-size: 2rem;
+        margin: 0 1rem 1rem 1rem;
+      }
+    }
+    &-content{
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      h2{
+        font-size: 1rem;
+        border-bottom: 1px $medium-c solid;
+      }
+      h3{
+        font-size: 1rem;
+      }
+      p{
+        font-size: .8rem;
+      }
+    }
+  }
+
+  #footer{
+    align-items: center;
+    justify-self: center;
+    &-content{
+      p{
+        font-size: .8rem;
+        margin: 0;
+      }
+      .contacts{
+        a{
+          margin: .3rem;
+          &:first-child{
+            margin-left: .3rem;
+          }
+          i{
+            font-size: 1.3rem;
+          }
+        }
+      }
+      #logo{
+        width: 30px;
+        height: 30px;
+        margin-left: .5rem;
+      }
+    }
+  }
+}
+
+
