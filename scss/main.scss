@@ -22,6 +22,10 @@ html{
   overflow-x: visible;
   color: $dc;
   background-color: $lc;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 a{
   text-decoration: none;
@@ -48,19 +52,44 @@ img{
   height: 70px;
 
 }
-//Animations of home page
+//Animations
+@-moz-keyframes pop-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes pop-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes pop-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes pop-in {
   0% {
     opacity: 0;
-    transform: translateY(-4rem) scale(.8);
   }
   100% {
-    opacity: 100%;
-    transform: none;
+    opacity: 1;
   }
 }
 .animate-pop-in {
-  animation: pop-in .6s cubic-bezier(0,.9,.3,1.2) forwards;
+  -moz-animation: pop-in 3s forwards;
+  -webkit-animation: pop-in 3s forwards;
+  -o-animation: pop-in 3s forwards;
+  animation: pop-in 3s forwards;
   opacity: 0;
 }
 .ty-title{

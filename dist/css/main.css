@@ -55,7 +55,11 @@ body {
   max-width: 100vw;
   overflow-x: visible;
   color: #333;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
 
 a {
   text-decoration: none;
@@ -79,16 +83,35 @@ img {
   width: 70px;
   height: 70px; }
 
+@-moz-keyframes pop-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes pop-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes pop-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 @keyframes pop-in {
   0% {
-    opacity: 0;
-    transform: translateY(-4rem) scale(0.8); }
+    opacity: 0; }
   100% {
-    opacity: 100%;
-    transform: none; } }
+    opacity: 1; } }
 
 .animate-pop-in {
-  animation: pop-in 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  -moz-animation: pop-in 3s forwards;
+  -webkit-animation: pop-in 3s forwards;
+  -o-animation: pop-in 3s forwards;
+  animation: pop-in 3s forwards;
   opacity: 0; }
 
 .ty-title {
