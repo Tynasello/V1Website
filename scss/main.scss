@@ -52,6 +52,7 @@ img{
   height: 70px;
 
 }
+
 //Animations
 @-moz-keyframes pop-in {
   0% {
@@ -96,28 +97,28 @@ img{
   animation-delay: .2s;
 }
 .nas-title{
-  animation-delay: .4s;
+  animation-delay: .3s;
 }
 .profile-pic{
-  animation-delay: .8s;
+  animation-delay: .4s;
 }
 .about-me{
-  animation-delay: 1s;
+  animation-delay: .5s;
 }
 .about-me-p{
-  animation-delay: 1.2s;
+  animation-delay: .6s;
 }
 .contact-me{
-  animation-delay: 1.2s;
+  animation-delay: .7s;
 }
 .contacts{
-  animation-delay: 1.2s;
+  animation-delay: .7s;
 }
 .work-1{
-  animation-delay: 1.2s;
+  animation-delay: .7s;
 }
 #work-heading{
-  animation-delay: 1.4s;
+  animation-delay: .7s;
 }
 .arduino-title{
   animation-delay: .2s;
@@ -132,19 +133,19 @@ img{
   animation-delay: .4s;
 }
 #projects-heading{
-  animation-delay: 2s;
+  animation-delay: .8s;
 }
 .projects{
-  animation-delay: 2.1s;
+  animation-delay: .9s;
 }
 #achievements-heading{
-  animation-delay: 2.2s;
+  animation-delay: .9s;
 }
 .marks{
-  animation-delay: 2.2s;
+  animation-delay: .9s;
 }
 .cert{
-  animation-delay: 2.3s;
+  animation-delay: 1s;
 }
 .content {
   animation-delay: .6s;
@@ -302,12 +303,12 @@ img{
     grid-gap:1rem;
     margin-left: 7rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+
     .project{
       display: flex;
       flex-direction: column;
       h2{
-        margin-top: 1rem;
+
         text-transform: none;
       }
       p{
@@ -560,70 +561,92 @@ img{
       }
   }
 
-  .content{
+  .content {
     margin: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
     align-items: center;
-    .text{
+
+    .text {
       display: flex;
       flex-direction: column;
       align-items: center;
-      h3{
+
+      h3 {
         font-family: 'Noto Sans', sans-serif;
         font-weight: normal;
         border-bottom: 1px $medium-c solid;
         margin: 1rem 1rem 0 1rem;
       }
-      p{
+
+      p {
         margin: 1rem;
         color: $dc
       }
     }
-    &:nth-child(5){
+
+    &:nth-child(5) {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       margin-bottom: 1rem;
-      h3{
+
+      h3 {
         font-family: 'Noto Sans', sans-serif;
         font-weight: normal;
         border-bottom: 1px $medium-c solid;
         margin: 1rem;
       }
-      .IDE{
-        color: #0000EE;
-        text-decoration: underline;
-        &:hover{
-          color: $dc ;
-        }
-      }
-      .git-btn{
+
+      .git-btn {
         margin: 1rem 1rem 1rem 0;
       }
     }
-    &:nth-child(6){
+
+    &:nth-child(6) {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
       margin-bottom: 2rem;
-      h3{
+
+      h3 {
         border-bottom: 1px $medium-c solid;
         margin: 1rem;
+        font-family: 'Noto Sans', sans-serif;
+        font-weight: normal;
+
       }
-      p{
-        width: 500px;
+
+      p {
+        margin:0 1rem ;
       }
-      video{
+
+      video {
         overflow: hidden;
         margin-bottom: 3rem;
       }
     }
+    &:nth-child(7){
+      h3{
+        margin-bottom: 1rem;
+      }
+      grid-column: 1/span 2;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-bottom: 3rem;
+    }
   }
+}
+.link{
+  color: #0000EE;
+  text-decoration: underline;
 
+  &:hover {
+    opacity: 50%;
+  }
 }
 
 
