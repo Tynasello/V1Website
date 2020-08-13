@@ -513,6 +513,14 @@ img{
       font-size: 1.3rem;
       font-family: 'Montserrat', sans-serif;
     }
+    .flap {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      .flappb{
+        margin-top: .5rem;
+        font-size: .9rem;
+      }
+    }
     i{
       color: $ac;
       margin-top: 1.5rem;
@@ -642,10 +650,10 @@ img{
 }
 .link{
   color: #0000EE;
-  text-decoration: underline;
+  text-decoration: none;
 
   &:hover {
-    opacity: 50%;
+    text-decoration: underline;
   }
 }
 
