@@ -434,6 +434,12 @@ img {
     #project-header .proj-right p {
       font-size: 1.3rem;
       font-family: 'Montserrat', sans-serif; }
+    #project-header .proj-right .flap {
+      margin-top: 1rem;
+      font-size: 1.1rem; }
+      #project-header .proj-right .flap .flappb {
+        margin-top: .5rem;
+        font-size: .9rem; }
     #project-header .proj-right i {
       color: #34495E;
       margin-top: 1.5rem; }
@@ -524,9 +530,9 @@ img {
 
 .link {
   color: #0000EE;
-  text-decoration: underline; }
+  text-decoration: none; }
   .link:hover {
-    opacity: 50%; }
+    text-decoration: underline; }
 
 @media (max-width: 1024px) {
   .container {
